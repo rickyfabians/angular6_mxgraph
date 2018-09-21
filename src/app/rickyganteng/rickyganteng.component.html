@@ -1,0 +1,42 @@
+<h4>rickyganteng works!</h4>
+<div class="global-container">
+  <mat-grid-list cols="5" rowHeight="90px">
+      <mat-grid-tile [colspan]="3" [rowspan]="1">
+          <mat-card class="toolbar" >
+              <mat-card-content>
+                  <span style="font-size: 20px" class="makan">Offer action diagram</span>
+                  <hr style="width: 2px; height: 100px; display: inline; margin-left: 3px; margin-right: 3px;border-color:grey" />
+                  <!-- <mat-list-item> -->
+                    <button mat-button (click)="saveAsXml()"><mat-icon class="icon cursor" matTooltip="save">save</mat-icon></button>
+                    <button mat-button><mat-icon class="icon cursor" matTooltip="email">mail_outline</mat-icon></button>
+                    <button mat-button><mat-icon class="icon cursor" matTooltip="draft">save_alt</mat-icon></button>
+                    <button mat-button (click)="exportFile('pdf')"><mat-icon class="icon cursor" matTooltip="chat">chat_bubble</mat-icon></button>
+                  <!-- </mat-list-item> -->
+                  <hr style="width: 2px; height: 100px; display: inline; margin-left: 3px; margin-right: 3px;border-color:grey" />
+                  <mat-button-toggle-group name="fontStyle" aria-label="Font Style" #group="matButtonToggleGroup">
+                    <mat-button-toggle ><mat-icon matTooltip="select" (click)="onKeyup('z')">near_me</mat-icon></mat-button-toggle>
+                    <mat-button-toggle ><mat-icon matTooltip="position" (click)="onKeyup('x')">pan_tool</mat-icon></mat-button-toggle>
+                  </mat-button-toggle-group>
+                  <button mat-button matTooltip="zoom in"  (click)="onKeyup('+')"><mat-icon class="icon cursor" >zoom_in</mat-icon></button>
+                  <button mat-button matTooltip="zoom out"  (click)="onKeyup('-')"><mat-icon class="icon cursor">zoom_out</mat-icon></button>
+                </mat-card-content>
+              </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="1" [rowspan]="5">
+          <mat-card class="side-menu-right">
+              <mat-list >
+                  <mat-list-item *ngFor="let lod of lovOfdiagram" [ngClass]="{shape : lod.type == 'shape', rhombus : lod.type == 'rhombus', rounded : lod.type == 'rounded', label : lod.type == 'label'}" [ngStyle]="{'border-color': lod.color,'color': lod.color}" dnd-draggable [dragData]="lod"><img *ngIf="lod.icon != ''" src="{{lod.icon}}" height="18" width="18"><hr *ngIf="lod.icon != ''" style="width: 1px; height: 50%; margin-left: 1px; margin-right: 2px;border-color:dodgerblue" />{{lod.label}}</mat-list-item>
+                  <mat-list-item *ngFor="let lod of lovOfdiagram" [ngClass]="{shape : lod.type == 'shape', rhombus : lod.type == 'rhombus', rounded : lod.type == 'rounded', label : lod.type == 'label'}" [ngStyle]="{'border-color': lod.color,'color': lod.color}" dnd-draggable [dragData]="lod"><img *ngIf="lod.icon != ''" src="{{lod.icon}}" height="18" width="18"><hr *ngIf="lod.icon != ''" style="width: 1px; height: 50%; margin-left: 1px; margin-right: 2px;border-color:dodgerblue" />{{lod.label}}</mat-list-item>
+              </mat-list>
+          </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="3" [rowspan]="4" [style.background]="grey">
+          <!-- <div style="overflow-y: scroll;width: 800px;height: 400px;"> -->
+            <div #graphContainer id="graphContainer" (click)="EditorDiagram(group.value,$event)" 
+            style="position:relative;overflow:auto;max-width:800px;width:1100px;max-height:600px;height:500px;background:url('../assets/images2/grid.gif');"
+             dnd-droppable (onDropSuccess)="EditorDiagram($event)" (window:keyup)="onKeyup($event)">
+            </div>
+          <!-- </div> -->
+      </mat-grid-tile>
+    </mat-grid-list>
+</div>

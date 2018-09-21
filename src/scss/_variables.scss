@@ -1,0 +1,97 @@
+//COLOR BUMA
+$primary-color: #66BB6A;
+
+//COLOR TRAKINDO
+//$primary-color: #FE9D01;
+
+$icon-color: #828282;
+
+$btn-primary-color: $primary-color;
+$btn-red-color: #e12d53;
+
+$status-enabled-background-color: #66BB6A;
+$status-disabled-background-color: #afafaf;
+
+
+$dark-blue: #17468a;
+$blue: #4c8dca;
+$light-blue: #4c8dca;
+$red: #e12d53;
+$lighter-red: #f5f0f2;
+$lighter-grey: #f8f8f8;
+$grey: #666666;
+$light-grey: #e0e0e0;
+$green: #60BA20;
+$orange: #FFA000;
+
+
+
+//FONT-SIZE
+$x-large : 20px;
+$large : 16px;
+$medium : 14px;
+$small : 12px;
+$x-small : 10px;
+
+
+//IMAGES
+$logo: '/assets/images/logo-cmtools.png';
+//$logo: '/assets/images/logo-buma.png';
+//$logo: '/assets/images/logo-trakindo.png';
+
+$loading-ellipsis: '/assets/images/Ellipsis.gif';
+
+$checkout: '/assets/images/logout.png';
+$star: '/assets/images/star.png';
+$checked: '/assets/images/checked.png';
+$checked-disabled: '/assets/images/checked-disabled.png';
+
+//Modal Action
+$save: '/assets/images/save.png';
+$close: '/assets/images/close.png';
+
+//Table Action
+$view: '/assets/images/view.png';
+$edit: '/assets/images/edit.png';
+$delete: '/assets/images/garbage.png';
+$participant: '/assets/images/participant.png';
+$favorite: '/assets/icons/favorites-button.svg';
+
+//Event Menu
+$item-edit-icon: '/assets/icons/item-edit-icon.svg';
+$item-view-icon: '/assets/icons/item-view-icon.svg';
+$item-participant-icon: '/assets/icons/item-participant-icon.svg';
+$item-cancel-icon: '/assets/icons/item-cancel-icon.svg';
+$item-download-icon: '/assets/icons/item-download-icon.svg';
+$item-comment-icon: '/assets/icons/item-comment-icon.svg';
+
+//Main Menu
+$event-icon: '/assets/icons/event-icon.svg';
+$event-icon-white: '/assets/icons/event-icon-white.svg';
+$news-icon: '/assets/icons/news-icon.svg';
+$news-icon-white: '/assets/icons/news-icon-white.svg';
+$quiz-icon: '/assets/icons/quiz-icon.svg';
+$quiz-icon-white: '/assets/icons/quiz-icon-white.svg';
+$survey-icon: '/assets/icons/survey-icon.svg';
+$survey-icon-white: '/assets/icons/survey-icon-white.svg';
+$forum-topic-icon: '/assets/icons/forum-topic-icon.svg';
+$forum-topic-icon-white: '/assets/icons/forum-topic-icon-white.svg';
+$forum-icon: '/assets/icons/forum-icon.svg';
+$forum-icon-white: '/assets/icons/forum-icon-white.svg';
+$message-icon: '/assets/icons/message-icon.svg';
+$message-icon-white: '/assets/icons/message-icon-white.svg';
+$category-icon: '/assets/icons/category-icon.svg';
+$category-icon-white: '/assets/icons/category-icon-white.svg';
+$group-icon: '/assets/icons/group-icon.svg';
+$group-icon-white: '/assets/icons/group-icon-white.svg';
+$user-icon: '/assets/icons/user-icon.svg';
+$user-icon-white: '/assets/icons/user-icon-white.svg';
+$admin-icon: '/assets/icons/admin-icon.svg';
+$admin-icon-white: '/assets/icons/admin-icon-white.svg';
+$question-icon: '/assets/icons/question-icon.svg';
+$question-icon-white: '/assets/icons/question-icon-white.svg';
+$feedback-icon: '/assets/icons/feedback-icon.svg';
+$feedback-icon-white: '/assets/icons/feedback-icon-white.svg';
+
+//SIZE
+$header-height: 58px;

@@ -1,0 +1,161 @@
+.snackbar {
+    width: 100%;
+    text-align: center !important;  
+    &.fail {
+        background-color: red;
+    }
+    &.success {
+		background-color: green;
+	}
+}
+
+.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.hidden {
+	display: none;
+}
+
+.x-small {
+    font-size: $x-small;
+}
+
+.small {
+    font-size: $small;
+}
+
+.medium {
+    font-size: $medium;
+}
+
+.large {
+    font-size: $large;
+}
+
+.x-large {
+    font-size: $x-large;
+}
+
+// =================================================== Font Weight ===================================================
+
+.bolder {
+	font-weight: bolder;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.lighter {
+	font-weight: lighter;
+}
+
+// =================================================== Text Align ====================================================
+
+.left {
+	text-align: left !important;
+}
+
+.right {
+	text-align: right !important;
+}
+
+.center {
+	text-align: center !important;
+}
+
+.break-word {
+    word-wrap: break-word;
+}
+
+.clickable {
+    cursor: pointer;
+}
+// =================================================== Text Color ====================================================
+
+
+.grey{
+    color: $grey;
+}
+
+.orange{
+    color : $orange;
+}
+
+.light-grey {
+	color: $light-grey;
+}
+
+.lighter-grey {
+    color: $lighter-grey;
+}
+
+.red {
+    color: $red;
+}
+
+.green {
+    color: $green;
+}
+
+
+.daterangepicker{
+    border: solid 1px $primary-color !important;
+    
+    .input-mini.active{
+        border: 1px solid $primary-color !important;
+    }
+
+    td.active, td.active.in-range{
+        background-color: $primary-color !important;
+        color:white !important;
+    }
+    td.in-range{
+        background-color: #c8ff91 !important;
+    }
+
+}
+.daterangepicker:before{
+    border-bottom: 0px solid $primary-color !important;
+}
+.daterangepicker:after{
+    border-bottom: 0px solid $primary-color !important;
+}
+
+
+.mat-pseudo-checkbox-checked, .mat-pseudo-checkbox-indeterminate, .mat-accent .mat-pseudo-checkbox-checked, .mat-accent .mat-pseudo-checkbox-indeterminate {
+    background: $blue;
+}
+
+.mat-dialog-container {
+    border-radius: 8px !important;
+    padding: 18px 16px !important;
+}
+
+.mat-tooltip {
+    font-size: 10px !important;
+}
+
+.mat-table, .mat-select, .mat-dialog-title, .mat-stepper, .mat-checkbox {
+    font-family: Graphik,Arial,sans-serif !important;
+}
+
+.mat-horizontal-stepper-content{
+    padding: 0 24px;
+
+    .mat-button{
+        margin: 15px 0 5px 0;
+        width: fit-content;
+        border: 1px solid #666666;
+        border-radius: 7px;
+        line-height:28px;
+        min-width: 66px;
+    }
+}
+
+button {
+    outline:none;
+}
